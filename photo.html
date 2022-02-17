@@ -15,8 +15,10 @@
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css">
 
+  <script defer src="./js/swiper-bundle.min.js"></script>
   <script defer src="./js/script.js"></script>
 
 </head>
@@ -61,8 +63,38 @@
 
   </header>
 
-  <main class="main main_index">
-    <img src="./img/logo.png" alt="Логотип к фильму Бэтмэн" class="logo" width="329" height="235">
+  <main class="main main_slider">
+
+    <div class="slider-main swiper">
+      <ul class="slider-main__list swiper-wrapper">
+        <li class="slider-main__item swiper-slide">
+          <img src="./photo/photo01.jpg" alt="photo" class="slider-main__img">
+        </li>
+        <li class="slider-main__item swiper-slide">
+          <img src="./photo/photo02.jpg" alt="photo" class="slider-main__img">
+        </li>
+        <li class="slider-main__item swiper-slide">
+          <img src="./photo/photo03.jpg" alt="photo" class="slider-main__img">
+        </li>
+      </ul>
+    </div>
+    <div class="pagination">
+      <button class="pagination__arrow"></button>
+      <div class="slider-thumbs swiper">
+        <ul class="slider-thumbs__list swiper-wrapper">
+          <li class="slider-thumbs__item swiper-slide">
+            <img src="./photo/photo01-thumbs.jpg" alt="preview" class="slider-thumbs__img" width="260" height="100">
+          </li>
+          <li class="slider-thumbs__item swiper-slide">
+            <img src="./photo/photo02-thumbs.jpg" alt="preview" class="slider-thumbs__img" width="260" height="100">
+          </li>
+          <li class="slider-thumbs__item swiper-slide">
+            <img src="./photo/photo03-thumbs.jpg" alt="preview" class="slider-thumbs__img" width="260" height="100">
+          </li>
+        </ul>
+      </div>
+    </div>
+
   </main>
 
   <footer class="footer">
